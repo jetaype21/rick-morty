@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RICK AND MORTY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <h1 class="text-center text-primary">pockeAPI</h1>
+
+    <!-- SPINNER DE CARGA -->
+    <div class="d-flex align-items-center mx-3 d-none" id="spinner">
+        <strong>CARGANDO...</strong>
+        <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+    </div>
+
+    <!-- card -->
+    <main>
+        <article class="container">
+            <section class="row" id="cards">
+
+            </section>
+        </article>
+    </main>
+
+    <template id="template">
+        <div class="border border-secondary col-sm-12 col-md-6 col-lg-3 mb-3">
+            <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" class="card-img-top mt-3" alt="...">
+            <div class="card-body text-center">
+                <p class="card-text name lead h4">MARTY</p>
+                <p class="card-text species lead h4">HUMAN</p>
+            </div>
+        </div>
+    </template>
+    <script src="./app.js"></script>
+</body>
+
+</html>
